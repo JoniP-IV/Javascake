@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteleria</title>
+
+  <!-- CSS GENERALES -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS PERSONALIZADOS -->
+  <link rel="stylesheet" href="css/header/header.css">
+  <link rel="stylesheet" href="css/cards/cards.css">
+  <link rel="stylesheet" href="css/pedidos/pedidos.css">
+  <link rel="stylesheet" href="css/footer/footer.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h2 class="header__title">
+      <a class="header__title" href="">
+        ¡JAVASCAKE!
+      </a>
+    </h2>
+
+    <ul class="header__list">
+      <li><a class="header__link" href="#catalogo">Cátalogo</a></li>
+      <li><a class="header__link" href="#pedidos">Pedir</a></li>
+      <li><a class="header__link" href="#">Pastelero</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- CATALOGO DE TORTAS -->
+    <h2 class="title">Catálogo de tortas hechas</h2>
+    <section id="catalogo" class="catalogo__section container">
+
+      <!-- CARDS DE TORTAS -->
+      <div class="catalogo__cards">
+        <img class="card__img" src="img/chocolate.jpeg" alt="">
+        <h3 class="card__title">
+          Bomba de chocolate
+        </h3>
+        <span class="card__precio">2.500$</span>
+        <p class="card__descripcion">Esta torta tiene 3 pisos, además tiene relleno de mouse de chocolate y dulce de
+          leche, cobertura de crema de chocolate.</p>
+      </div>
+
+      <div class="catalogo__cards">
+        <img class="card__img" src="img/vainilla.jpeg" alt="">
+        <h3 class="card__title">
+          Torre de vainilla
+        </h3>
+        <span class="card__precio">2.000$</span>
+        <p class="card__descripcion">Esta torta tiene 3 pisos, el relleno de esta torta es de mouse de vainilla y la
+          cobertura es de crema de vainilla y mousse limón.</p>
+      </div>
+
+      <div class="catalogo__cards">
+        <img class="card__img" src="img/redvelvet.jpeg" alt="">
+        <h3 class="card__title">
+          Red Velvet
+        </h3>
+        <span class="card__precio">3.000$</span>
+        <p class="card__descripcion">Esta torta tiene 2 pisos, el bizcochuelo es de frutos rojos, tiene relleno de mouse
+          de chocolate blanco, y cobertura de crema con detalles de frutos rojos</p>
+      </div>
+    </section>
+
+
+
+    <!-- PEDIDOS -->
+    <h2 class="title">Hacer mi pedido</h2>
+    <section id="pedidos" class="pedidos__section">
+      <form class="pedidos__form" action="#">
+        <p class="pedidos__title">De qué gusto prefiere el bizcochuelo?</p>
+        <select class="input" class="pedidos__select">
+          <option value="chocolate">Chocolate</option>
+          <option value="vainilla">Vainilla</option>
+          <option value="ambos">Ambos</option>
+        </select>
+
+        <p class="pedidos__title">Opción con o sin T.A.C.C</p>
+        <div class="pedidos__grupos">
+          <div class="pedidos__items">
+            <input type="radio" name="tacc" value="Con tacc">
+            <p>Con T.A.C.C</p>
+          </div>
+
+          <div class="pedidos__items">
+            <input type="radio" name="tacc" value="sintacc">
+            <p>Sin T.A.C.C</p>
+          </div>
+        </div>
+
+        <p class="pedidos__title">Que adornos quieres?</p>
+        <div class="pedidos__item">
+          <input type="checkbox" name="banderin" value="banderin">
+          <label for="banderin">Banderin</label>
+        </div>
+        <div class="pedidos__item">
+          <input type="checkbox" name="velas" value="velas">
+          <label for="velas">Velas</label> <input class="input number" type="number" placeholder="Cuantas velas?">
+        </div>
+
+        <div class="pedidos__item">
+          <input type="checkbox" name="bengalas" value="bengalas">
+          <label for="bengalas">Bengalas</label> <input class="input number" type="number"
+            placeholder="Cuantas Bengalas?">
+        </div>
+
+        <p class="pedidos__title">Que Rellenos quieres?</p>
+
+        <div class="pedidos__grupos">
+          <div class="pedidos__item">
+            <input type="checkbox" name="oreo" value="oreo">
+            <label for="oreo">Oreo</label>
+          </div>
+          <div class="pedidos__item">
+            <input type="checkbox" name="bonobon" value="bonobon">
+            <label for="bonobon">Bon o Bon</label>
+          </div>
+          <div class="pedidos__item">
+            <input type="checkbox" name="ddl" value="ddl">
+            <label for="ddl">Dulce de leche</label>
+          </div>
+          <div class="pedidos__item">
+            <input type="checkbox" name="marroc" value="marroc">
+            <label for="marroc">Marroc</label>
+          </div>
+          <div class="pedidos__item">
+            <input type="checkbox" name="duraznos" value="duraznos">
+            <label for="duraznos">Duraznos</label>
+          </div>
+        </div>
+
+
+        <p class="pedidos__title">Datos</p>
+
+        <label for="name">Nombre:</label>
+        <input class="input" type="text" name="name" placeholder="Ingrese su nombre">
+
+        <label for="telefono">Teléfono:</label>
+        <input class="input" type="number" name="telefono" placeholder="Ingrese su N° de teléfono">
+
+        <label for="direccion">Dirección:</label>
+        <input class="input" type="text" name="direccion" placeholder="Ingrese su dirección">
+
+        <button class="btn" type="submit">¡Hacer mi pedido!</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy creado por <a href="https://github.com/JoniP-IV" target="_blank"><span> Jonathan Pardo </span> </a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.catalogo__section{
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.catalogo__cards{
+  align-items: center;
+  border: 2px solid var(--dark-pink);
+  border-radius: 12px;
+  box-shadow: 6px 8px 12px -6px var(--dark);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  max-height: 500px;
+  max-width: 300px;
+}
+
+.catalogo__cards:hover{
+  cursor: pointer;
+  transform: scale(1.02,1.02);
+}
+
+.card__img{
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.card__title{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-pink);
+
+}
+
+
+.card__precio{
+  color: var(--dark);
+  font-weight: 700;
+
+}
+
+.card__descripcion{
+  font-size: 0.9rem;
+  color: var(--dark);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 8px 8px;
+}

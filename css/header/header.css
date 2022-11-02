@@ -1,10 +1,11 @@
 .header {
-  padding: 24px 32px;
+  padding: 24px 24px;
   background-color: var(--light-pink);
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 1px 4px var(--dark);
+  z-index: 100;
 
   position: sticky;
   left: 0;
@@ -25,6 +26,7 @@
 .header__list {
   display: flex;
   gap: 48px;
+  margin-right: 62px;
 }
 
 .header__link {
